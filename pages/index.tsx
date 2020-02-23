@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import fetch from "isomorphic-unfetch";
+import { withApollo } from '../lib/apollo'
 
 const Layout = styled.div`
   h1 {
@@ -36,4 +37,5 @@ Index.getInitialProps = async function() {
   };
 };
 
-export default Index;
+export default withApollo({ ssr: true })(Index)
+
