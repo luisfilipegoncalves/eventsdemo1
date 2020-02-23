@@ -3,7 +3,6 @@ import styled from "styled-components";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 import { withApollo } from "../../lib/apollo";
-import Link from "next/link";
 
 const Title = styled.h1`
   color: red;
